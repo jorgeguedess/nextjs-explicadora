@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
+import { Footer } from "@/components/footer";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -51,6 +52,7 @@ export default function RootLayout({
         <main className="relative top-[141px] mb-[141px] flex-1 min-[368px]:top-[117px] min-[368px]:mb-[117px] min-[648px]:top-[137px] min-[648px]:mb-[137px]">
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
