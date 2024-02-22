@@ -48,7 +48,9 @@ export default function RootLayout({
         className={`${roboto.variable} ${poppins.variable} flex min-h-screen flex-col bg-background font-main text-foreground`}
       >
         <Header />
-        <main>{children}</main>
+        <main className="relative top-[141px] mb-[141px] flex-1 min-[368px]:top-[117px] min-[368px]:mb-[117px] min-[648px]:top-[137px] min-[648px]:mb-[137px]">
+          {children}
+        </main>
       </body>
     </html>
   );
