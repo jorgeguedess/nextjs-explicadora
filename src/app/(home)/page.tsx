@@ -3,6 +3,7 @@ import { SectionChoice } from "@/components/section-choice";
 import { SectionAbout } from "@/components/section-about";
 import { SectionGallery } from "@/components/section-gallery";
 import { SectionDoubts } from "@/components/section-doubts";
+import { SectionForm } from "@/components/section-form";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SectionAbout />
       <SectionGallery />
       <SectionDoubts />
+      <SectionForm />
     </>
   );
 }
