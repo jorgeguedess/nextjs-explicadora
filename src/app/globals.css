@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 220 37% 8%;
+  --input: 219 36% 11%;
+  --popover: 210 40% 98%;
+  --accent: 221 100% 97%;
+
+  --primary: 220 100% 46%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 0 0% 45%;
+  --secondary-foreground: 0 0% 100%;
+
+  --muted: 220 100% 91%;
+  --muted-foreground: 232 36% 59%;
+
+  --success: 142 65% 30%;
+  --success-foreground: 0 0% 100%;
+
+  --footer: 231 35% 25%;
+  --footer-foreground: 0 0% 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev,
+.swiper-pagination-bullet {
+  display: none !important;
+}
+
+@media (min-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: flex !important;
+    color: #ffffff !important;
+    background: hsl(var(--secondary)) !important;
+    border-radius: 50% !important;
+    padding: 0.75rem !important;
+    width: 3.75rem !important;
+    height: 3.75rem !important;
+    transition: 0.3s;
+  }
+  .swiper-pagination-bullet {
+    display: inline-flex !important;
+    width: 0.75rem !important;
+    height: 0.75rem !important;
+    background-color: hsl(var(--footer)) !important;
+    margin-left: 18px !important;
+  }
+}
