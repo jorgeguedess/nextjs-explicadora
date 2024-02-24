@@ -27,3 +27,9 @@ export const links = [
     path: "/contato",
   },
 ];
+
+export function formatNumberCell(number: string): string {
+  const clearNumber = number.replace(/\D/g, "");
+  const formatedNumber = `55${clearNumber.substring(2)}`;
+  return formatedNumber;
+}
