@@ -45,10 +45,10 @@ export const Footer = () => {
               <li>
                 <Link
                   className="flex w-fit max-w-full flex-wrap items-center gap-1 text-wrap break-all px-2 text-sm font-medium hover:text-primary hover:underline"
-                  href={"mailto:explicadoratiadenise@outlook.com"}
+                  href={"mailto:explicadoratiadenise@gmail.com"}
                 >
                   <Icon.Mail className="size-4 flex-shrink-0 text-primary" />
-                  explicadoratiadenise@outlook.com
+                  explicadoratiadenise@gmail.com
                 </Link>
               </li>
             </ul>
