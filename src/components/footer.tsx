@@ -12,9 +12,9 @@ export const Footer = () => {
         <div className="flex flex-col gap-8 *:flex-1 sm:flex-row sm:justify-between sm:gap-10">
           <div className="flex flex-col gap-4 ">
             <div className="flex max-w-80 flex-col gap-2">
-              <h6 className="font-title text-lg text-footer">
+              <h5 className="font-title text-lg text-footer">
                 Profissional da Educação
-              </h6>
+              </h5>
               <p className="text-base">
                 Somos uma explicadora com mais de <strong>20 anos</strong> de
                 experiência ajudando crianças e adolescentes a alcançarem seus

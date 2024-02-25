@@ -68,9 +68,9 @@ export const ContactForm = () => {
 
   return (
     <div className="flex w-full max-w-[37.5rem] flex-col gap-8 rounded-[1.25rem] bg-background p-8 lg:w-[37.5rem]">
-      <h5 className="font-title text-2xl font-semibold sm:text-3xl">
+      <h4 className="font-title text-2xl font-semibold sm:text-3xl">
         Entre em Contato!
-      </h5>
+      </h4>
       <Form {...form}>
         <form
           method="post"

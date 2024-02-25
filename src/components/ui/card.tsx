@@ -13,7 +13,7 @@ export const Card = ({ card }: CardProps) => {
         {card.icon}
       </div>
       <div className="text-center">
-        <h4 className="mb-4 font-title text-xl text-primary">{card.title}</h4>
+        <h3 className="mb-4 font-title text-xl text-primary">{card.title}</h3>
         <p dangerouslySetInnerHTML={{ __html: card.description }}></p>
       </div>
     </div>
