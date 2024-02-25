@@ -56,7 +56,7 @@ export const Slider = () => {
         {slidesContent.map((slide) => (
           <SwiperSlide key={slide.alt}>
             <div className="relative h-fit max-h-[37.5rem] min-[648px]:h-[calc(100vh-137px)]">
-              <div className="container flex w-full flex-col items-start justify-center bg-[#314F67] py-10 text-white sm:absolute sm:h-full sm:w-1/2 sm:rounded-br-[60px] sm:rounded-tr-[60px] sm:py-0 sm:pl-[80px]">
+              <div className="container flex w-full flex-col items-start justify-center bg-[#314F67] py-10 text-white sm:absolute sm:h-full sm:w-1/2 sm:rounded-br-[60px] sm:rounded-tr-[60px] sm:py-0 sm:pl-[80px] lg:max-w-[50%]">
                 <div className="pointer-events-none mb-8 flex h-[8rem] max-w-[350px] flex-col gap-4 sm:h-fit">
                   <h1 className="font-title  text-[clamp(1.5rem,4vw,3rem)] font-semibold">
                     {slide.title}
