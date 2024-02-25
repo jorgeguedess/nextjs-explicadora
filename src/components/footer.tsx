@@ -10,7 +10,7 @@ export const Footer = () => {
     <footer className="bg-popover">
       <div className="container py-6 sm:py-16">
         <div className="flex flex-col gap-8 *:flex-1 sm:flex-row sm:justify-between sm:gap-10">
-          <div className="flex flex-col gap-4 px-2">
+          <div className="flex flex-col gap-4 ">
             <div className="flex max-w-80 flex-col gap-2">
               <h6 className="font-title text-lg text-footer">
                 Profissional da Educação
@@ -23,13 +23,11 @@ export const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4">
-            <h5 className="px-2 font-title text-lg text-footer">
-              Nosso Contato
-            </h5>
+            <h5 className=" font-title text-lg text-footer">Nosso Contato</h5>
             <ul className="flex flex-col gap-2 text-secondary  sm:gap-4">
               <li>
                 <Link
-                  className="flex w-fit flex-wrap items-center gap-1 px-2 text-sm font-medium hover:text-primary hover:underline"
+                  className="flex w-fit flex-wrap items-center gap-1  text-sm font-medium hover:text-primary hover:underline"
                   href={"tel:+21996026504"}
                 >
                   <Icon.Phone className="size-4 flex-shrink-0 text-primary" />
@@ -37,14 +35,14 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <address className="flex flex-wrap items-center gap-1 px-2 text-sm font-medium not-italic">
+                <address className="flex flex-wrap items-center gap-1  text-sm font-medium not-italic">
                   <Icon.Location className="size-4 flex-shrink-0 text-primary" />
                   Rio de Janeiro - Pedra de Guaratiba
                 </address>
               </li>
               <li>
                 <Link
-                  className="flex w-fit max-w-full flex-wrap items-center gap-1 text-wrap break-all px-2 text-sm font-medium hover:text-primary hover:underline"
+                  className="flex w-fit max-w-full flex-wrap items-center gap-1 text-wrap break-all  text-sm font-medium hover:text-primary hover:underline"
                   href={"mailto:explicadoratiadenise@gmail.com"}
                 >
                   <Icon.Mail className="size-4 flex-shrink-0 text-primary" />
@@ -55,14 +53,14 @@ export const Footer = () => {
           </div>
           <div className="flex flex-wrap justify-between">
             <div className="flex flex-col gap-4">
-              <h5 className="px-2 font-title text-lg text-footer">Links</h5>
+              <h5 className=" font-title text-lg text-footer">Links</h5>
               <nav>
-                <ul className="flex flex-col gap-2 text-secondary sm:gap-4">
+                <ul className="flex flex-col gap-2 text-secondary">
                   {links.map((link) => (
                     <li key={link.id}>
                       <Link
                         href={link.path}
-                        className="p-2 text-sm font-medium text-secondary hover:text-primary"
+                        className="inline-block w-full  py-1 text-sm font-medium text-secondary hover:text-primary"
                       >
                         {link.name}
                       </Link>
@@ -72,13 +70,13 @@ export const Footer = () => {
               </nav>
             </div>
             <div className="flex flex-col gap-4 self-end sm:self-baseline">
-              <h5 className="px-2 font-title text-lg text-footer">Siga-nos</h5>
+              <h5 className=" font-title text-lg text-footer">Siga-nos</h5>
               <Link
                 href={
                   "https://www.facebook.com/p/Explicadora-tia-Denise-100063166152781/"
                 }
                 target="_blank"
-                className="w-fit px-2 py-2 text-primary"
+                className="w-fit  py-2 text-primary"
                 aria-label="Facebook"
               >
                 <Icon.Facebook className="size-7" />

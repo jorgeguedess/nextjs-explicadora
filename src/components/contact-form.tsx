@@ -28,8 +28,8 @@ const formSchema = z.object({
   phone: z.string().regex(phoneRegex, "Forneça um número de telefone válido"),
   message: z
     .string()
-    .min(1, "Assunto é requerido*")
-    .max(160, "Assunto muito longo")
+    .min(1, "Mensagem é requerida*")
+    .max(160, "Mensagem muito longa")
     .transform(normalize),
 });
 
