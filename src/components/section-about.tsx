@@ -28,14 +28,18 @@ export const SectionAbout = () => {
             height={0}
             className="w-full"
           />
-          <div className="absolute bottom-0 flex w-full flex-wrap items-center justify-center gap-4 rounded-2xl bg-primary px-5 py-4 text-primary-foreground">
+          <div className="absolute bottom-0 flex w-full flex-wrap items-center  justify-evenly gap-x-4 gap-y-2 rounded-2xl bg-primary px-5 py-4 text-primary-foreground md:flex-nowrap">
             <div>
-              <h4 className="font-title text-2xl font-bold">+20 anos</h4>
-              <span className="text-[0.75rem]">de Experiência</span>
+              <h4 className="font-title text-2xl font-bold md:text-3xl lg:text-4xl">
+                +20 anos
+              </h4>
+              <span className="text-[0.75rem] lg:text-sm">de Experiência</span>
             </div>
             <div>
-              <h4 className="font-title text-2xl font-bold">+400 alunos</h4>
-              <span className="text-[0.75rem]">Ajudados</span>
+              <h4 className="font-title text-2xl font-bold md:text-3xl lg:text-4xl">
+                +600 alunos
+              </h4>
+              <span className="text-[0.75rem] lg:text-sm">Ajudados</span>
             </div>
           </div>
         </div>
