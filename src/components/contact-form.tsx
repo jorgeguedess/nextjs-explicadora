@@ -25,7 +25,10 @@ const formSchema = z.object({
     .string()
     .min(1, "Email é requerido")
     .email("Deve ser um e-mail válido*"),
-  phone: z.string().regex(phoneRegex, "Forneça um número de telefone válido"),
+  phone: z
+    .string()
+    .min(1, "Telefone é requerido")
+    .regex(phoneRegex, "Forneça um número de telefone válido"),
   message: z
     .string()
     .min(1, "Mensagem é requerida*")
@@ -55,10 +58,11 @@ export const ContactForm = () => {
       setLoading(true);
       const response = axios.post("/api/send", values);
       const data = (await response).data;
-      alert("Email enviado com sucesso!");
+      console.log(values);
+      alert(data.msg);
       return data;
     } catch (error: any) {
-      alert("Erro no envio de email!");
+      alert(error.response.data.error);
       console.error(error);
     } finally {
       form.reset();
@@ -111,8 +115,10 @@ export const ContactForm = () => {
                     <InputMask
                       className={inputClass}
                       placeholder="Telefone*"
+                      value={field.value}
+                      onChange={field.onChange}
                       mask="(99) 99999-9999"
-                      {...field}
+                      // {...field}
                     />
                   </FormControl>
                   <FormMessage />
