@@ -1,5 +1,5 @@
 import { ContactProps } from "@/interfaces/contact";
-import { SendEmail, SendEmailAdmin } from "@/lib/Service/Mail.service";
+import { SendEmailUser, SendEmailAdmin } from "@/lib/Service/Mail.service";
 import { NextResponse } from "next/server";
 
 export const POST = async (request: Request) => {
@@ -19,14 +19,12 @@ export const POST = async (request: Request) => {
   }
 
   try {
-    const mailResponse = await SendEmail({
+    await SendEmailUser({
       name,
       email,
-      phone,
-      message,
     });
 
-    const mailResponseAdmin = await SendEmailAdmin({
+    await SendEmailAdmin({
       name,
       email,
       phone,

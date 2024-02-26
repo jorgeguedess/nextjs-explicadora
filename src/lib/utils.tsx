@@ -28,8 +28,16 @@ export const links = [
   },
 ];
 
-export function formatNumberCell(number: string): string {
-  const clearNumber = number.replace(/\D/g, "");
-  const formatedNumber = `55${clearNumber.substring(2)}`;
-  return formatedNumber;
+export function formatNumberCell(phoneNumber: string): string {
+  const cleanedNumber = phoneNumber.replace(/\D/g, "");
+
+  const formattedNumber = cleanedNumber.startsWith("21")
+    ? cleanedNumber
+    : `21${cleanedNumber}`;
+
+  const internationalNumber = formattedNumber.startsWith("55")
+    ? formattedNumber
+    : `55${formattedNumber}`;
+
+  return internationalNumber;
 }

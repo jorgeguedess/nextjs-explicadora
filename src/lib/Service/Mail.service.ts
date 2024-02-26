@@ -1,9 +1,8 @@
+import { render } from "@react-email/render";
 import nodemailer from "nodemailer";
 import { ContactProps } from "@/interfaces/contact";
-import { formatNumberCell } from "@/lib/utils";
-
-import { TemplateEmailUser } from "@/emails/template-user";
-import { TemplateEmailAdmin } from "@/emails/template-admin";
+import { TemplateUserEmail } from "@/emails/template-user";
+import { TemplateAdminEmail } from "@/emails/template-admin";
 
 const host = process.env.EMAIL_HOST;
 
@@ -17,13 +16,20 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export const SendEmail = async ({ name, email }: ContactProps) => {
+interface SendEmailUserProps {
+  name: string;
+  email: string;
+}
+
+export const SendEmailUser = async ({ name, email }: SendEmailUserProps) => {
+  const emailHtml = render(TemplateUserEmail({ name }));
+
   const info = await transporter.sendMail({
     from: host || "user@gmail.com",
     to: email,
     subject:
       "Mensagem Recebida! - Aula de Reforço com a Explicadora Tia Denise",
-    html: TemplateEmailUser.replace("{{name}}", name),
+    html: emailHtml,
   });
   return info;
 };
@@ -34,17 +40,14 @@ export const SendEmailAdmin = async ({
   phone,
   message,
 }: ContactProps) => {
+  const emailHtml = render(TemplateAdminEmail({ name, email, phone, message }));
+
   const info = await transporter.sendMail({
     from: host || "user@gmail.com",
     to: process.env.EMAIL_USER_OPTIONAL,
     subject:
       "Mensagem Recebida! - Aula de Reforço com a Explicadora Tia Denise",
-    html: TemplateEmailAdmin.replace("{{name}}", name)
-      .replace("{{email}}", email)
-      .replace("{{phone}}", phone ?? "")
-      .replace("{{link}}", phone ? formatNumberCell(phone) : "")
-      .replace("{{message}}", message),
+    html: emailHtml,
   });
-
   return info;
 };
