@@ -36,6 +36,30 @@ export const metadata: Metadata = {
     "trabalhos escolares",
     "provas",
   ],
+  authors: [{ name: "Denise Cristina" }],
+  creator: "Jorge Guedes",
+  publisher: "Jorge Guedes",
+  openGraph: {
+    type: "website",
+    siteName: "Explicadora Tia Denise",
+    url: "https://explicadoratiadenise.com.br/",
+  },
+  robots: {
+    follow: true,
+    index: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    },
+  },
+  verification: {
+    google: "ocSuGR64vU3ROat2A9veTGtDcH8DUvRnVgq1fCq4Azk",
+    yandex: "yandex",
+    yahoo: "yahoo",
+  },
+  category: "educação",
 };
 
 export default function RootLayout({
