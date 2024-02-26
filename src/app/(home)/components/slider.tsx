@@ -75,10 +75,6 @@ export const Slider = () => {
                 </Link>
               </div>
               <picture className="hidden h-full w-full sm:block">
-                <source
-                  media="(min-width:1024px)"
-                  srcSet={slide.imageUrlLG}
-                ></source>
                 <Image
                   src={slide.imageUrl}
                   alt={slide.alt}
