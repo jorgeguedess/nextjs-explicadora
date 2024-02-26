@@ -3,6 +3,7 @@
 import InputMask from "react-input-mask";
 import { z } from "zod";
 import { SubmitHandler, useForm } from "react-hook-form";
+import { sendGAEvent } from "@next/third-parties/google";
 
 import { Button } from "@/components/ui/button";
 import { Input, inputClass } from "@/components/ui/input";
@@ -60,6 +61,10 @@ export const ContactForm = () => {
       const data = (await response).data;
       console.log(values);
       alert(data.msg);
+      sendGAEvent({
+        event: "submit_form",
+        value: JSON.stringify(data),
+      });
       return data;
     } catch (error: any) {
       alert(error.response.data.error);

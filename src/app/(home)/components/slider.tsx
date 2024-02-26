@@ -17,6 +17,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectFade, Autoplay, Navigation, Pagination } from "swiper/modules";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export const Slider = () => {
   return (
@@ -69,6 +70,9 @@ export const Slider = () => {
                   href={"https://wa.me/5521996026504"}
                   target="_blank"
                   className={`${buttonVariants({ variant: "success" })} gap-2`}
+                  onClick={() => {
+                    sendGTMEvent({ event: "buttonClicked", value: "xyz" });
+                  }}
                 >
                   <Icon.Whatsapp className="size-5 flex-shrink-0" />
                   Fale no Whatsapp

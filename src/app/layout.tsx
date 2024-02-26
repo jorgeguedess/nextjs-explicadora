@@ -3,6 +3,7 @@ import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import { Footer } from "@/components/footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -62,6 +63,8 @@ export const metadata: Metadata = {
   category: "educação",
 };
 
+const googleAnalyticsID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -77,6 +80,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <GoogleTagManager gtmId={googleAnalyticsID} />
       </body>
     </html>
   );

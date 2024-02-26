@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button, buttonVariants } from "./ui/button";
 import { links } from "@/lib/utils";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 export const NavBottom = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -92,6 +93,9 @@ export const NavBottom = () => {
               href={"https://wa.me/5521996026504"}
               target="_blank"
               className={`${buttonVariants({ variant: "success" })} w-full flex-wrap gap-2`}
+              onClick={() => {
+                sendGTMEvent({ event: "buttonClicked", value: "xyz" });
+              }}
             >
               <Icon.Whatsapp className="flex-shrink-0" />
               Fale no Whatsapp
