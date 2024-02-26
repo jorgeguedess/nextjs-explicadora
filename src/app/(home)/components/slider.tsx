@@ -67,6 +67,7 @@ export const Slider = () => {
                 </div>
                 <Link
                   href={"https://wa.me/5521996026504"}
+                  target="_blank"
                   className={`${buttonVariants({ variant: "success" })} gap-2`}
                 >
                   <Icon.Whatsapp className="size-5 flex-shrink-0" />

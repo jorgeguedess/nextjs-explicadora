@@ -61,6 +61,7 @@ export const NavBottom = () => {
           </ul>
           <Link
             href={"https://wa.me/5521996026504"}
+            target="_blank"
             className={`${buttonVariants({ variant: "success", size: "sm" })} hidden sm:flex sm:flex-wrap sm:gap-2`}
           >
             <Icon.Whatsapp className="size-5 flex-shrink-0" />
@@ -89,6 +90,7 @@ export const NavBottom = () => {
           <div className="container flex flex-col gap-8 py-4">
             <Link
               href={"https://wa.me/5521996026504"}
+              target="_blank"
               className={`${buttonVariants({ variant: "success" })} w-full flex-wrap gap-2`}
             >
               <Icon.Whatsapp className="flex-shrink-0" />
