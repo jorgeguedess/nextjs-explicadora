@@ -42,6 +42,7 @@ export const metadata: Metadata = {
   publisher: "Jorge Guedes",
   openGraph: {
     type: "website",
+    title: "Explicadora Tia Denise",
     siteName: "Explicadora Tia Denise",
     url: "https://explicadoratiadenise.com.br/",
   },
