@@ -1,36 +1,103 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+<img src="public/logo.svg" alt="Explicadora Tia Denise" width="250">
+</div>
 
-## Getting Started
+<hr>
 
-First, run the development server:
+<p align="center">
+   <img src="https://img.shields.io/static/v1?label=STATUS&message=DISPON%C3%8DVEL&color=RED&style=for-the-badge"/>
+</p>
 
-```bash
+### Tópicos 
+
+- [Descrição do projeto](#descrição-do-projeto)
+
+- [Funcionalidades](#funcionalidades)
+
+- [Aplicação](#aplicação)
+
+- [Ferramentas utilizadas](#ferramentas-utilizadas)
+
+- [Acesso ao projeto](#acesso-ao-projeto)
+
+- [Abrir e rodar o projeto](#abrir-e-rodar-o-projeto)
+
+- [Histórico de versões](#historico-de-versoes)
+
+- [Desenvolvedores](#desenvolvedores)
+
+## Descrição do projeto 
+
+<p align="justify">
+ 
+Site da Explicadora Tia Denise, desenvolvido com a biblioteca React e seu FrameWork NextJS, com o objetivo de divulgar sobre seu serviço de reforço escolar e que consigam buscar com o mecanismo de pesquisa do Google. O projeto possui páginas como a de <strong>Ínicio</strong>, <strong>Sobre</strong>, <strong>Galeria</strong> e <strong>Contato</strong>.
+
+O site permite conhecer a Explicadora da professora Tia Denise, onde oferece aulas de reforço do maternal até todo o Ensino Fundamental e visitar os benefícios que leva a um aluno optar por escolher a explicadora, além de conhecer seus serviços educacionais. 
+
+Conta também com uma parte de contato onde é possível entrar em contato a partir de um link para o Whatsapp ou formulário para que clientes consigam se comunicar e tirar possíveis dúvidas atráves do e-mail.
+
+![Descrição do projeto, onde possui um laptop e um celular lado a lado utilizando o site da Explicadora Tia Denise.](public/preview.png)
+<br/>
+![Descrição do projeto, onde possui um laptop e um celular lado a lado utilizando o site da Explicadora Tia Denise.](public/core-web-vitals.png)
+</p>
+
+## Funcionalidades
+
+:heavy_check_mark: `Funcionalidade 1:` Envio de e-mails de forma automática, sendo personalizado em duas partes: do <strong>usuário</strong> e do <strong>administrador</strong>. 
+
+:heavy_check_mark: `Funcionalidade 2:` Conexão com Google Analytics.
+
+## Aplicação
+
+<div align="center">
+
+![Formulário de Contato](public/contact-form.gif)
+</div>
+
+
+## Ferramentas utilizadas
+
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white) ![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white) ![](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
+###
+
+## Acesso ao projeto
+
+https://explicadoratiadenise.com.br/
+
+Você pode [acessar o código fonte do projeto](https://github.com/jorgeguedess/nextjs-explicadora) ou [baixá-lo](https://github.com/jorgeguedess/nextjs-explicadora/archive/refs/heads/main.zip).
+
+
+## Abrir e rodar o projeto
+
+> Caso você seja um desenvolvedor, use as instruções abaixo para instalar as dependências e sugerir alterações para a aplicação.
+
+É possível verificar o conteúdo de cada versão, selecionando a *branch* específica e o histórico de [commits].
+
+Após baixar o projeto deste repositório, dentro do diretório do projeto você deve usar o comando `npm install` em um terminal, para gerar a pasta **node_modules**.
+```sh
+npm install
+```
+Concluída a instalação das dependências do projeto, use o comando `npm run dev` para visualizar a aplicação na porta [localhost:3000](http://localhost:3000).
+```sh
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+A página irá recarregar a cada alteração feita no código e mostrará eventuais erros no console.
+
+É recomendado que você use o comando `npm run build` antes de fazer um *commit*, para verficar a ocorrência de erros na aplicação e garantir o deploy da aplicação.
+```sh
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Historico de versoes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Clique nas versões abaixo, para observar a evolução do projeto ao longo do tempo.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+| Versão | Update |
+| ------ | ------ |
+| [Versão 0.0](https://nextjs-explicadora-1j1t6gysn-jorge-guedes.vercel.app/) | Primeira versão do projeto, apresentada para a Explicadora no dia 26 de Fevereiro de 2024, quando foi publicado oficialmente o site ao ar. |
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Desenvolvedores
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| [<img src="https://avatars.githubusercontent.com/jorgeguedess" width=115><br><sub>Jorge Guedes</sub>](https://github.com/jorgeguedess) |   |
+| :---: | :---: |
