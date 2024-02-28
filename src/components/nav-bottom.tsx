@@ -19,7 +19,7 @@ export const NavBottom = () => {
 
   return (
     <nav
-      className={`relative flex h-fit w-full flex-col overflow-y-auto bg-popover ${isMenuOpen && "h-[calc(100vh-40px)] sm:h-fit"}`}
+      className={`relative flex w-full flex-col overflow-y-auto bg-popover ${isMenuOpen && "h-[calc(100vh-30px)] sm:h-fit"}`}
     >
       <div className="shadow-sm">
         <div className="container flex flex-wrap items-center justify-between gap-1 py-3">

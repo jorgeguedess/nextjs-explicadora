@@ -98,7 +98,7 @@ export const ContactForm = () => {
               </FormItem>
             )}
           />
-          <div className="flex flex-wrap gap-4 *:min-w-32 *:flex-1">
+          <div className="flex flex-wrap gap-4 *:min-w-52 *:flex-1">
             <FormField
               control={form.control}
               name="email"
