@@ -7,5 +7,6 @@ declare namespace NodeJS {
     EMAIL_PASSWORD: string;
     NEXT_PUBLIC_BASE_URL: string;
     NEXT_PUBLIC_GA_MEASUREMENT_ID: string;
+    NEXT_PUBLIC_GA_MEASUREMENT_TAG: string;
   }
 }
