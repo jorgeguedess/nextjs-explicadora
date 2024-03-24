@@ -54,7 +54,13 @@ export const SectionGallery = () => {
         slides={allGallery}
       />
 
-      {path === "/" && (
+      {path === "/galeria" && (
+        <div>
+          <p>Em breve mais fotos...</p>
+        </div>
+      )}
+
+      {/* {path === "/" && (
         <div className="text-center">
           <Link
             href={"/galeria"}
@@ -63,7 +69,7 @@ export const SectionGallery = () => {
             Veja mais fotos aqui
           </Link>
         </div>
-      )}
+      )} */}
     </Section>
   );
 };
